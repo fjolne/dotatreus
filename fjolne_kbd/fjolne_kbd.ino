@@ -151,8 +151,8 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
 }
 
 void setup() {
-  Qukeys.setHoldTimeout(125);
-  Qukeys.setMaxIntervalForTapRepeat(150);
+  Qukeys.setHoldTimeout(300);
+  Qukeys.setMaxIntervalForTapRepeat(0);
   Qukeys.setOverlapThreshold(75);
   Qukeys.setMinimumHoldTime(50);
   Qukeys.setMinimumPriorInterval(100);
